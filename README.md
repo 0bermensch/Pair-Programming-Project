@@ -1,2 +1,1 @@
-whatever
-x2
+whatever conflicts resolved

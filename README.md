@@ -1,2 +1,1 @@
-whatever
-yeah
+whatever conflicts resolved

@@ -1,0 +1,13 @@
+.weatherForm {
+  display: flex;
+  justify-content: center;
+  &__input {
+    border: 1px solid silver;
+    height: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  &__button {
+    border: 1px solid silver;
+  }
+}

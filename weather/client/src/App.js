@@ -15,27 +15,24 @@ class App extends Component {
   };
 
   componentDidMount() {
-    axios
-      .get(`${$url}${this.state.city}&appid=${$weatherApiKey}`)
-      .then(response => {
-        const temp = Number(response.data.main.temp) - 273.15;
-        this.setState({ currentTemp: Math.floor(temp) });
-        this.setState({ weather: response.data.weather[0].main });
-        console.log(Math.floor(temp));
-        console.log(response.data.weather[0].main);
-      });
+    this.getWeather(this.state.city);
   }
+
+  getWeather = city => {
+    axios.get(`${$url}${city}&appid=${$weatherApiKey}`).then(response => {
+      const temp = Number(response.data.main.temp) - 273.15;
+      this.setState({ city: city });
+      this.setState({ currentTemp: Math.floor(temp) });
+      this.setState({ weather: response.data.weather[0].main });
+    });
+  };
 
   render() {
     return (
       <div className="App">
         <Header />
-        <Form />
-        <Weather
-          temp={this.state.currentTemp}
-          status={this.state.weather}
-          city={this.state.city}
-        />
+        <Form getWeather={this.getWeather} />
+        <Weather props={this.state} />
       </div>
     );
   }

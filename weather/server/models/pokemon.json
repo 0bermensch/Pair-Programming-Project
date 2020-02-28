@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "name": "altaria",
+    "image": "../assets/334.png",
+    "type": "cloud"
+  },
+  {
+    "id": "2",
+    "name": "lugia",
+    "image": "../assets/249.png",
+    "type": "wind"
+  },
+  {
+    "id": "3",
+    "name": "squirtle",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+    "type": "water"
+  },
+  {
+    "id": "4",
+    "name": "pikachu",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+    "type": "electric"
+  },
+  {
+    "id": "5",
+    "name": "entei",
+    "image": "../assets/244.png",
+    "type": "sun"
+  },
+  {
+    "id": "6",
+    "name": "misty",
+    "image": "../assets/MistyEP.png",
+    "type": "mist"
+  },
+  {
+    "id": "7",
+    "name": "articuno",
+    "image": "../assets/144.png",
+    "type": "snow"
+  }
+]

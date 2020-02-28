@@ -2,7 +2,7 @@
   margin: 1rem;
   padding: 1rem;
   border-radius: 1rem;
-  background-color: rgba(66, 173, 235, 0.644);
+  background-color: $blue;
   display: flex;
   flex-wrap: wrap;
   flex: 1;
@@ -11,6 +11,8 @@
   &__info {
     p {
       margin: 0;
+      color: #ffffff;
+      font-size: 1.5rem;
     }
     flex: 0.6;
   }

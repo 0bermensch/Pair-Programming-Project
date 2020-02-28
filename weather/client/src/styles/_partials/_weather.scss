@@ -1,0 +1,28 @@
+.weather {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(66, 173, 235, 0.644);
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  line-height: 2rem;
+
+  &__info {
+    p {
+      margin: 0;
+    }
+    flex: 0.6;
+  }
+  &__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 5rem;
+      width: 5rem;
+      border-radius: 1rem;
+    }
+    flex: 0.4;
+  }
+}

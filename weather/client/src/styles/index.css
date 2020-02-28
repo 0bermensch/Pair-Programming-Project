@@ -13,10 +13,10 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 1.5rem;
   width: 100%;
   height: 200px;
@@ -36,8 +36,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .weatherForm__input {
@@ -61,23 +61,26 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  line-height: 2rem;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .weather__info {
   -webkit-box-flex: 0.6;
-  -ms-flex: 0.6;
-  flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
 }
 
 .weather__info p {
   margin: 0;
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
 .weather__icons {
@@ -85,25 +88,36 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 0.4;
-  -ms-flex: 0.4;
-  flex: 0.4;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2;
+          flex: 0.2;
 }
 
 .weather__icons img {
-  height: 5rem;
-  width: 5rem;
+  height: 10rem;
+  width: 10rem;
   border-radius: 1rem;
+}
+
+.weather__pokemon {
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2;
+          flex: 0.2;
+}
+
+.weather__pokemon img {
+  padding-top: 15px;
+  height: 10rem;
 }
 
 body {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   font-family: "pt-sans-narrow";
 }
@@ -112,6 +126,6 @@ body {
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+          box-sizing: inherit;
 }
 /*# sourceMappingURL=index.css.map */

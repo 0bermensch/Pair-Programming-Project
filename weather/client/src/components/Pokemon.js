@@ -22,7 +22,7 @@ function Pokemon({ props }) {
   }
 
   if (props.pokemon === undefined) {
-    return <p>loading</p>;
+    return <p></p>;
   }
 
   const choosingPokes = props.pokemons.map((pokemon, index) => {

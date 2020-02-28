@@ -1,14 +1,14 @@
 import React from "react";
 
-export default function form() {
+export default function form(props) {
   return (
-    <form className="weatherForm">
+    <form onSubmit={props.onSubmit} className="weatherForm">
       <input
         type="text"
         className="weatherForm__input"
         placeholder="type in city"
       />
-      <button className="wetherForm__button">search</button>
+      <button className="weatherForm__button">search</button>
     </form>
   );
 }

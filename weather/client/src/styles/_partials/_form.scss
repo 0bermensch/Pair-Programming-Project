@@ -2,14 +2,14 @@
   display: flex;
   justify-content: center;
   &__input {
-    border: 1px solid silver;
-    height: 2rem;
+    border: 2px solid $blue;
+    height: 3rem;
     padding: 1rem;
     border-radius: 5px;
   }
+
   &__button {
-    border: 1px solid silver;
-    border-radius: 5px;
+    height: 3rem;
     margin-left: 1rem;
   }
 }

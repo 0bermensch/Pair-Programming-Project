@@ -1,4 +1,5 @@
 import React from "react";
+import Pokeball from "../assets/Icons/pokeball.png";
 
 export default function form(props) {
   const eventHandler = event => {
@@ -14,7 +15,11 @@ export default function form(props) {
         placeholder="type in city"
         name="city"
       />
-      <button className="weatherForm__button">search</button>
+      <input
+        type="image"
+        src={Pokeball}
+        className="weatherForm__button"
+      ></input>
     </form>
   );
 }

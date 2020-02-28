@@ -21,9 +21,11 @@ class App extends Component {
   getWeather = city => {
     axios.get(`${$url}${city}&appid=${$weatherApiKey}`).then(response => {
       const temp = Number(response.data.main.temp) - 273.15;
-      this.setState({ city: city });
-      this.setState({ currentTemp: Math.floor(temp) });
-      this.setState({ weather: response.data.weather[0].main });
+      this.setState({
+        city: city,
+        currentTemp: Math.floor(temp),
+        weather: response.data.weather[0].main
+      });
     });
   };
 

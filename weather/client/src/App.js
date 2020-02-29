@@ -32,10 +32,11 @@ class App extends Component {
     });
   };
 
-  getPokemon = poke => {
-    axios.get("http://localhost:5000/").then(res => {
+  getPokemon = () => {
+    console.log("get pokemon");
+    axios.get("/pokelist").then(res => {
       this.setState({
-        pokemons: res.pokemons
+        pokemons: res.data
       });
     });
     // console.log(pokemons);

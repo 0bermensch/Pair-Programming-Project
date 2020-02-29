@@ -17,7 +17,7 @@ const pokeFile = __dirname + "/models/pokemon.json";
 const pokes = require(pokeFile);
 const router = express.Router();
 
-app.get("/", (req, res) => {
+app.get("/pokelist", (req, res) => {
   const pokeList = pokes.map(poke => {
     return {
       id: poke.id,

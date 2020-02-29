@@ -35,7 +35,7 @@ export default function weather({ props }) {
     pokemon = windypoke;
   } else if (
     props.weather === "Fog" ||
-    props.weather === "Haze" ||
+    props.weather === "Mist" ||
     props.weather === "Smoke"
   ) {
     image = foggy;
